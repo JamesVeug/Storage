@@ -14,14 +14,18 @@ Extended version of PlayerPrefs to make life easier
 1. Use Storage.Save to save the data that you need
 
 example: 
+```csharp
 Storage.instance.Save("playerName", "JamesGames")
+```
 
 ##### Saving Lists:
 1. Use Storage.SaveList to save the data that you need
 
 example: 
+```csharp
 List<string> playerList = ...;
 Storage.instance.SaveList("players", playerList);
+```
 
 
 ##### Loading Data:
@@ -29,12 +33,16 @@ Storage.instance.SaveList("players", playerList);
 
 
 example: 
+```csharp
 string playerName = Storage.instance.Load("playerName", "I need a new name!")
+```
 
 ##### Loading Lists:
 2. Use Storage.LoadList to load in the data that has previously been saved
 
 
 example: 
+```csharp
 List<string> players = Storage.instance.LoadList<string>("players", new List<string>())
+```
 
