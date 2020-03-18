@@ -15,14 +15,10 @@ Extended version of PlayerPrefs to make life easier
 
 example: 
 ```csharp
+// Primatives
 Storage.instance.Save("playerName", "JamesGames")
-```
 
-##### Saving Lists:
-1. Use Storage.SaveList to save the data that you need
-
-example: 
-```csharp
+// Lists
 List<string> playerList = ...;
 Storage.instance.SaveList("players", playerList);
 ```
